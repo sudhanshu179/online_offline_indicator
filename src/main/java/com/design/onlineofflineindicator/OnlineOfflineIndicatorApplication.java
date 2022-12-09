@@ -12,8 +12,7 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.SocketException;
 
-@SpringBootApplication
-@EnableAutoConfiguration(exclude = {DatadogMetricsExportAutoConfiguration.class, DataSourceAutoConfiguration.class})
+@SpringBootApplication(exclude = {DatadogMetricsExportAutoConfiguration.class, DataSourceAutoConfiguration.class})
 public class OnlineOfflineIndicatorApplication {
 
     public static void main(String[] args) {
